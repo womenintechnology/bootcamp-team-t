@@ -1,5 +1,23 @@
 {% include 'Common/View/header.twig' %}
 <section class="container">
-        <h1>Kontakt</h1>
+        <form method ="post" action="">   
+                <h1>NAPISZ DO NAS</h1>
+                <div>
+                        <input type="text" name="name" placeholder="Imię i nazwisko" required>
+                </div>
+                <div>
+                        <input type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div>
+                        <input type="text" name"theme" placeholder="Temat">
+                </div>
+                <div>
+                        <textarea name="tetxarea" placeholder="Treść"></textarea>
+                </div>
+                <div>
+                        <input type="submit" value="WYŚLIJ" />
+                </div>
+        </form>
+        
 </section>
 {% include 'Common/View/footer.twig' %}
