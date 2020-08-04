@@ -1,23 +1,30 @@
 {% include 'Common/View/header.twig' %}
-<section class="container">
-        <form method ="post" action="">   
-                <h1>NAPISZ DO NAS</h1>
+<section class="container contact-section">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <form method="post" action="" class="form">   
                 <div>
-                        <input type="text" name="name" placeholder="Imię i nazwisko" required>
-                </div>
-                <div>
-                        <input type="email" name="email" placeholder="E-mail" required>
-                </div>
-                <div>
-                        <input type="text" name"theme" placeholder="Temat">
-                </div>
-                <div>
-                        <textarea name="tetxarea" placeholder="Treść"></textarea>
-                </div>
-                <div>
-                        <input type="submit" value="WYŚLIJ" />
+                <h1 class="form-title">NAPISZ DO NAS</h1> <br>
+                
+                        <div>
+                                <input class="form-input" type="text" name="name" placeholder="Imię i nazwisko" required>
+                        </div>
+                        <div>
+                                <input class="form-input" type="email" name="email" placeholder="E-mail" required>
+                        </div>
+                        <div>
+                                <input class="form-input"  type="text" name="theme" placeholder="Temat" required>
+                        </div>
+                        <div>
+                                <textarea class="form-input form-input--text" name="textarea" placeholder="Treść" required></textarea>
+                        </div>
+                        <div>
+                               
+                               <i  class="fas fa-check-circle" >  <input class="u-center-text submit-button" type="submit"  value="WYŚLIJ"  /> </i>
+                        </div>
                 </div>
         </form>
-        
+
+                
+
 </section>
 {% include 'Common/View/footer.twig' %}
