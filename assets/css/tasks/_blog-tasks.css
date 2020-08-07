@@ -1,0 +1,71 @@
+/* POSTS PAGE */
+li:first-child { /* The :first-child CSS pseudo-class represents the first element among a group of sibling elements. */
+    /* margin-top; reset the value for this margin */
+    margin-top: 0%;
+}
+
+li:last-child {
+    /* margin-bottom; reset the value for this margin */
+    margin-bottom: 0%;
+}
+
+.post-box__img {
+    /* the element should occupy the half of the available width. Take into account the width of a content and a margin */
+    /* width; */
+    /* float; set element on left */
+    /* display; the element should be type of element which occupy the entire available place */
+    /* margin-right; */
+    width: 45%;
+    float:left;
+    margin-right: 10%;
+    display:block;
+}
+
+.post-box__img img {
+    /* width; the element should occupy the entire available width */
+    width: 100%;
+
+}
+
+.post-box__description {
+    /* float; set element on left */
+    /* width; the element should occupy the half of the available width */
+ 
+    width: 45%;
+    float:left;
+}
+
+.read-more-button {
+    /* color; */
+    color: purple;
+    display:inline; 
+}
+
+.post-description__header:hover {
+    /* color; set the color that will appear when you hover over the item */
+    color: pink;
+}
+
+.post-description__title {
+    /* float; set element on left */
+    /* margin-bottom; */
+    float: left;
+    margin-bottom: 10%;
+}
+
+.post-description__date {
+    /* float; set element on right */
+    float: right;
+}
+
+.post-description__preamble {
+    /* width; the element should occupy the entire available width */
+    width: 100%;
+}
+.move-forward-icon {
+width: 10%;
+
+
+}
+
+  

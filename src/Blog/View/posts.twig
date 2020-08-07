@@ -3,7 +3,14 @@
         'id': '1',
         'title': 'Lorem ipsum',
         'preamble': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        'url':'/img/slider1.svg',
+        'url':'/img/picture2.jpg',
+        'date':'10-02-2020'
+    },
+	{
+        'id': '2',
+        'title': 'Test title',
+        'preamble': 'Test text.',
+        'url':'/img/picture1.jpg',
         'date':'10-02-2020'
     }
 ] %}
@@ -15,8 +22,15 @@
 		<h1>Blog</h1>
 		<ul>
 			{% for post in posts %}
-				<li>
-					<a href="/blog/{{ post.id }}">{{ post.title }}</a>
+				<li class="u-margin-medium">
+					<a class="post-box__img" href="/blog/{{ post.id }}"> <img src="{{post.url}}"/> </a>
+					<div class="post-box__description">
+					<a class="post-description__header" href="/blog/{{ post.id }}"> <h2 class="post-description__title"> {{post.title}}</h2> <span class="post-descritpion__date"> {{post.date}} </span> </a>
+				
+					<p class="post-description__preamble"> {{post.preamble}} </p>
+		 		    <a class="read-more-button" href="/blog/{{ post.id }}"> <h3> Read more </h3> <img class="move-forward-icon" src="/img/arrow.png"/> </a>
+
+					</div>
 				</li>
 			{% endfor %}
 		</ul>
