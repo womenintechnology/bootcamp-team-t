@@ -9,7 +9,9 @@
 	{
         'id': '2',
         'title': 'Test title',
-        'preamble': 'Test text.',
+        'preamble': 'Test 
+		text 
+		blalalalalalalalalalaa',
         'url':'/img/picture1.jpg',
         'date':'10-02-2020'
     }
@@ -19,17 +21,14 @@
 	<body class="top-wave">
 	{% endblock %}
 	<section class="container">
-		<h1>Blog</h1>
 		<ul>
 			{% for post in posts %}
-				<li class="u-margin-medium">
-					<a class="post-box__img" href="/blog/{{ post.id }}"> <img src="{{post.url}}"/> </a>
-					<div class="post-box__description">
+				<li class="u-margin--medium clearfix">
+					<a class="post-box__img" href="/blog/{{ post.id }}"> <img src="{{post.url}}" alt= "{{post.title}}"/> </a>
+					<div class="post-box__description clearfix">
 					<a class="post-description__header" href="/blog/{{ post.id }}"> <h2 class="post-description__title"> {{post.title}}</h2> <span class="post-descritpion__date"> {{post.date}} </span> </a>
-				
 					<p class="post-description__preamble"> {{post.preamble}} </p>
-		 		    <a class="read-more-button" href="/blog/{{ post.id }}"> <h3> Read more </h3> <img class="move-forward-icon" src="/img/arrow.png"/> </a>
-
+		 		    <a class="read-more-button clearfix" href="/blog/{{ post.id }}"> <span> Read more </span> <img class="move-forward-icon" src="/img/icon-back.svg"/> </a>
 					</div>
 				</li>
 			{% endfor %}
