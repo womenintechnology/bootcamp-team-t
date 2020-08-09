@@ -960,9 +960,8 @@ li:last-child {
 .post-description__date {
   float: right; }
 
-.post-description__preamble {
-  width: 100%;
-  line-clamp: 3; }
+.post-description__preamble module line-clamp {
+  width: 100%; }
 
 .move-forward-icon {
   width: 10%; }

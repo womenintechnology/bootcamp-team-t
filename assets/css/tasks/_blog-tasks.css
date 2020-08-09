@@ -43,9 +43,8 @@ li:last-child {
     float: right;
 }
 
-.post-description__preamble {
+.post-description__preamble module line-clamp {
     width: 100%;
-    line-clamp: 3;
 }
 .move-forward-icon {
     width: 10%;
