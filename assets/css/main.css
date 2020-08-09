@@ -13,4 +13,6 @@
 
 @import "sections/form";
 
+
+@import "tasks/global";
 @import "pages/home";
