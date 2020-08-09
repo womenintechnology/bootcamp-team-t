@@ -45,11 +45,24 @@ p,
     font-size: 1rem;
     line-height: 1.6;
 }
+<<<<<<< HEAD
 
 /* utils */
 
 .u-center-text {
     text-align: center;
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> createfoldercss.tasks
+.read-more-button span,
+.read-previous-button span {
+    color: #7a24ab;
+    font-weight: 700;
+    position: relative;
+    top: -.8rem;
+>>>>>>> createfoldercss.tasks
 }
 
 .u-margin--mini {
@@ -79,6 +92,7 @@ p,
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;  
   }
+<<<<<<< HEAD
 
   /* Components: read more button */
   .read-more-button {
@@ -113,3 +127,5 @@ p,
 .slider a:link:hover {
     background-color: #37096d;
 }
+=======
+>>>>>>> createfoldercss.tasks
