@@ -1,26 +1,14 @@
 {% include 'Common/View/header.twig' %}
 <section class="container contact-section">
 	<form method="post" action="" class="form">
-		<div>
-			<h1 class="form-title">NAPISZ DO NAS</h1>
-			<div>
-				<input class="form-input" type="text" name="name" placeholder="Imię i nazwisko" required>
-			</div>
-			<div>
-				<input class="form-input" type="email" name="email" placeholder="E-mail" required>
-			</div>
-			<div>
-				<input class="form-input" type="text" name="theme" placeholder="Temat" required>
-			</div>
-			<div>
-				<textarea class="form-input form-input--text" name="textarea" placeholder="Treść" required></textarea>
-			</div>
-			<div>
-				<i class="fas fa-check-circle u-center-text submit-button">
-					<span style="font-family: Lato">WYŚLIJ</span>
-				</i>
-			</div>
-		</div>
+		<h1 class="form-title">NAPISZ DO NAS</h1>
+		<input class="form-input" type="text" name="name" placeholder="Imię i nazwisko" required>
+		<input class="form-input" type="email" name="email" placeholder="E-mail" required>
+		<input class="form-input" type="text" name="theme" placeholder="Temat" required>
+		<textarea class="form-input form-input--text" name="textarea" placeholder="Treść" required></textarea>
+		<i class="fas fa-check-circle u-center-text submit-button">
+			<span style="font-family: Lato">WYŚLIJ</span>
+		</i>
 	</form>
 </section>
 {% include 'Common/View/footer.twig' %}
