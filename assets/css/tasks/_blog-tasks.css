@@ -8,7 +8,6 @@ li:last-child {
 }
 
 .post-box__img {
-    /* the element should occupy the half of the available width. Take into account the width of a content and a margin */
     width: 45%;
     float: left;
     margin-right: 10%;
@@ -16,7 +15,6 @@ li:last-child {
 }
 
 .post-box__img img {
-    /* width; the element should occupy the entire available width */
     width: 100%;
 }
 
@@ -46,9 +44,3 @@ li:last-child {
 .post-description__preamble {
     width: 100%;
 }
-
-.move-forward-icon {
-    width: 10%;
-}
-
-  
