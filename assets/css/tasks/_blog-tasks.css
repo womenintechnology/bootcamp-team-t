@@ -1,0 +1,46 @@
+
+li:first-child { 
+    margin-top: 0;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+.post-box__img {
+    width: 45%;
+    float: left;
+    margin-right: 10%;
+    display: block;
+}
+
+.post-box__img img {
+    width: 100%;
+}
+
+.post-box__description { 
+    width: 45%;
+    float: left;
+}
+
+.read-more-button {
+    color: purple;
+    display: inline; 
+}
+
+.post-description__header:hover {
+    color: pink;
+}
+
+.post-description__title {
+    float: left;
+    margin-bottom: 10%;
+}
+
+.post-description__date {
+    float: right;
+}
+
+.post-description__preamble {
+    width: 100%;
+}
