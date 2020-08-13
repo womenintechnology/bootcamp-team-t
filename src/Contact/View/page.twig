@@ -1,4 +1,4 @@
-{% include 'Common/View/header.twig' %}
+{# {% include 'Common/View/header.twig' %}
 <section class="container contact-section">
 	<form method="post" action="" class="form">
 		<h1 class="form-title">NAPISZ DO NAS</h1>
@@ -11,4 +11,64 @@
 		</i>
 	</form>
 </section>
-{% include 'Common/View/footer.twig' %}
+{% include 'Common/View/footer.twig' %} #}
+
+{% include 'Common/View/header.twig' %}
+{% block bodyClass %}
+    <body class="top-wave">
+    {% endblock %}
+    <section class="container">
+        <h1 class="u-center-text u-margin--small">O nas</h1>
+        <p>Jesteśmy społecznością kobiet skupionych wokół IT i nowych technologii. Tworzymy przestrzeń, która sprzyja wymianie wiedzy i rozwojowi. Pomagamy rozwijać kompetencje zawodowe, wzmacniamy kobiety na stanowiskach liderskich, budujemy dobre relacje w społeczności. Równocześnie zapewniamy oczekiwane korzyści firmom, które angażują się we współpracę z nami w roli partnerów.</p>
+        <p>W maju 2019 z grupy nieformalnej przekształciłyśmy się w zarejestrowane stowarzyszenie</p>
+        <h2 class="u-center-text u-margin--medium">Poznaj nas bliżej</h2>
+        <div class="row clearfix">
+            <div class="col-sm-3 u-margin--small person-box">
+                <img class="person-box__img" src="/img/code.svg" alt="Jola Wroniecka">
+                <div class="person-box__description">
+                    <h3 class="u-center-text u-margin-small">Jola Wroniecka</h3>
+                    <p>Front-end Developer</p>
+                </div>
+            </div>
+            <div class="col-sm-3 u-margin--small person-box">
+                <img class="person-box__img" src="/img/code.svg" alt="Agnieszka Wypich">
+                <div class="person-box__description">
+                    <h3 class="u-center-text u-margin-small">Agnieszka Wypich</h3>
+                    <p>Front-end Developer</p>
+                </div>
+            </div>
+            <div class="col-sm-3 u-margin--small person-box">
+                <img class="person-box__img" src="/img/arolka.PNG" alt="Aleksandra Rolka">
+                <div class="person-box__description">
+                    <h3 class="u-center-text u-margin-small">Aleksandra Rolka</h3>
+                    <p>Front-end Developer</p>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+        <div class="col-sm-3 u-margin--small person-box">
+                <img class="person-box__img" src="/img/code.svg" alt="Monika Młodzik">
+                <div class="person-box__description">
+                    <h3 class="u-center-text u-margin-small">Monika Młodzik</h3>
+                    <p>Front-end Developer</p>
+                </div>
+            </div>
+            <div class="col-sm-3 u-margin--small person-box">
+                <img class="person-box__img" src="/img/code.svg" alt="Diana Kidacka">
+                <div class="person-box__description">
+                    <h3 class="u-center-text u-margin-small">Diana Kidacka</h3>
+                    <p>Front-end Developer</p>
+                </div>
+            </div>
+            <div class="col-sm-3 u-margin--small person-box">
+                <img class="person-box__img" src="/img/code.svg" alt="Klara Gajaszek">
+                <div class="person-box__description">
+                    <h3 class="u-center-text u-margin-small">Klara Gajaszek</h3>
+                    <p>Front-end Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include 'Common/View/footer.twig' %}
+</body>
+
