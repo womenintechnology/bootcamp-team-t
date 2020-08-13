@@ -47,7 +47,7 @@ class Posts implements Common\Controller
 
         return $response;
     }
-
+// poniżej wstawiłam swój kod
     private function getPosts(): array
     {
         $posts = [
