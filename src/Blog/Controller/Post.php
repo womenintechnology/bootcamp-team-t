@@ -67,17 +67,40 @@ class Post implements Common\Controller
         return $response;
     }
     private function getPost(): array
-    {
-        $post = 
-        [ 
+   
+   
+   
+    { $post=[
+            ["id" =>"1",
             "title" => "Jak efektywnie uczyć się programowania?", 
             "content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "url" => "",
             "date" => "12-08-2020",
             "author_forename" => "John",
-            "author_surname" => "Nowak"
+            "author_surname" => "Nowak"],
+            ["id"=>"2",
+            "title" => "Jak efektywnie uczyć się programowania?", 
+            "content" => "blaablalblabllb.",
+            "url" => "",
+            "date" => "12-08-2020",
+            "author_forename" => "John",
+            "author_surname" => "Nowak"],
+            ["id"=>"3",
+            "title" => "Jak efektywnie uczyć się programowania?", 
+            "content" => "trololololo.",
+            "url" => "",
+            "date" => "12-08-2020",
+            "author_forename" => "John",
+            "author_surname" => "Nowak"]
         ];
-        
-        return $post;
+    
+     $this->id = $id;
+      $max=3;
+      For ($id=1;$id<= $max;$id++) 
+      if (empty($id)){
+          $id=="id";
+      }
+      
+         return [$id=> $post];
     }
 }
