@@ -1,0 +1,73 @@
+
+.post-page__img { 
+    /* width; the element should occupy the entire available width */
+    /* height; */
+    overflow: hidden;
+    object-fit: fill;
+}
+
+.post-page__header {
+    /* width; the element should occupy the entire available width */
+}
+
+
+.post-page-end__button--previous,
+.post-page__author-info,
+.post-page-end__button--next {
+    /* float; set element on left */
+    /* width; all three elements at the end of the page should share the available width between them, so one element should take up 1/3 of the entire available width*/
+}
+
+.post-page-end__button--next {
+    /* float; set element on right */
+}
+
+.post-page-end__button--previous { 
+    /* text-align; set text on the left */
+}
+
+.post-page-end__button--next {
+    /* text-align; set text on the right*/
+}
+
+.author-box__img {
+    /* text-align; center the text */
+    /* float; set element on left side */
+    /* Make a rectangle by setting values in hight and width properties */
+    /* height; */
+    /* width; */
+    /* border-radius; make a circle shape */
+    background-color: antiquewhite;
+}
+
+
+.author-box__description {
+    /* text-align; set text on the left side */
+}
+
+.author-description {
+    /* text-align; center the text */
+}
+
+.author-title {
+    /* text-transform;
+    font-weight;
+    font-weight; */
+}
+
+.author-title {
+    /* margin; reset the value for this margin */
+}
+
+.author-info--position {
+    /* margin; reset the value for this margin */
+}
+
+.author-info--name {
+    /* font-weight; */
+}
+
+.author-info--name {
+    /* margin; set margin at the top and bottom */
+}
+
