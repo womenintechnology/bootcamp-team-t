@@ -50,26 +50,22 @@ class Posts implements Common\Controller
 // poniżej wstawiłam swój kod
     private function getPosts(): array
     {
-        $posts = [
+        return [
             ["id" => "1", 
             "title" => "Jak efektywnie uczyć się programowania?", 
-            "preamble" => "tekst 1. Norwegia, urzędowo Królestwo Norwegii – państwo w Europie Północnej będące monarchią konstytucyjną, którego terytorium obejmuje zachodnią i północną część Półwyspu Skandynawskiego, Jan Mayen, Svalbard, Wyspę Bouveta i Lofoty. Ma łączną powierzchnię 385 207 km² i liczy 5 165 802 mieszkańców. Graniczy ze Szwecją niemal na całej długości granicy; znacznie krótsze odcinki oddzielają Norwegię od Finlandii i Rosji. Kraj ma również granicę morską przez cieśninę Skagerrakz  Danią. Stolicą Norwegii jest Oslo. Długa, licząca ponad 20 tys. kilometrów linia brzegowa znana jest z charakterystycznych zatok, tzw. fiordów. Nazwa kraju pochodzi od staronordyckiego nord vegen", 
-            "url" => "",
-            "date" => "12-08-2020"], 
-
+            "preamble" => "tekst 1",
+            "url" => "https://i.picsum.photos/id/1/5616/3744.jpg?hmac=kKHwwU8s46oNettHKwJ24qOlIAsWN9d2TtsXDoCWWsQ",
+            "date" => "12-08-2020"],
             ["id" => "2", 
             "title" => "Podstawy języka JavaScript", 
             "preamble" => "tekst 2", 
-            "url" => "",
-            "date" => "13-08-2020"], 
-
+            "url" => "https://i.picsum.photos/id/180/2400/1600.jpg?hmac=Ig-CXcpNdmh51k3kXpNqNqcDYTwXCIaonYiBOnLXBb8",
+            "date" => "13-08-2020"],
             ["id" => "3", 
             "title" => "Podstawy języka PHP", 
             "preamble" => "tekst 3", 
-            "url" => "",
+            "url" => "https://i.picsum.photos/id/2/5616/3744.jpg?hmac=l1XcSPFigtRLcO2F6Li-t17EIeylkWH94Oowb4vzApk",
             "date" => "14-08-2020"]
         ];
-
-        return $posts;
     }
 }
