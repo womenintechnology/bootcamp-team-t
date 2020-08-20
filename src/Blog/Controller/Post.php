@@ -44,7 +44,8 @@ class Post implements Common\Controller
     public function run(): Response
     {
         $idPost = (int)$this->request->query->get('id');
-        $post = $this->getPost();
+        $post = $this->getPost($idPost);
+    
 
         if ($post === null) {
             throw new ResourceNotFoundException();
@@ -63,14 +64,35 @@ class Post implements Common\Controller
                 'post' => $post
             ]
         ));
-
         return $response;
     }
-    private function getPost(): array
-    {
-        /**
-         * Add your code here
-         */
-        return [];
+    private function getPost($id): array
+    { $posts=[
+            ["id" =>"1",
+            "title" => "Jak efektywnie uczyć się programowania?",
+            "content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "url" => "1",
+            "date" => "12-08-2020",
+            "author_forename" => "John",
+            "author_surname" => "Nowak"],
+            ["id"=>"2",
+            "title" => "Jak efektywnie uczyć się programowania2?",
+            "content" => "blaablalblabllb.",
+            "url" => "",
+            "date" => "12-08-2020",
+            "author_forename" => "John",
+            "author_surname" => "Nowak"],
+            ["id"=>"3",
+            "title" => "Jak efektywnie uczyć się programowania3?",
+            "content" => "trololololo.",
+            "url" => "",
+            "date" => "12-08-2020",
+            "author_forename" => "John",
+            "author_surname" => "Nowak"]
+        ];
+        $url = "https://picsum.photos/id/{$id}";
+        $posts [$id-1]["url"]= $url;
+        return $posts[$id-1];
+        //$this->postsRepository->getOne();
     }
 }

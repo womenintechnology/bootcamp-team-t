@@ -29,7 +29,11 @@ class MySQL implements Posts
 
     public function getList(int $page = 1, int $postsPerPage = 10): array
     {
-        return [];
+        $sql = "SELECT * FROM Posts LIMIT 10";
+        $stml = $this->pdo->query($sql);
+        $data = $stml->fetchAll();
+
+        return $data;
     }
 
     public function getOne(int $id): ?Model\PostView
