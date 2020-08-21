@@ -43,12 +43,20 @@ class Post implements Common\Controller
 
     public function run(): Response
     {
-        $idPost = (int)$this->request->query->get('id');
-        $post = $this->getPost($idPost);
-
-        if ($post === null) {
-            throw new ResourceNotFoundException();
+        $dsn = "mysql:dbname=bootcamp;host=db";
+        $user = "bootcamp";
+        $password = "Bootcamp123!";
+        try {
+            $db = new \PDO($dsn, $user, $password);
+        } catch (\PDOException $e) {
+          echo 'Connection failed: ' . $e->getMessage();
         }
+        //$idPost = (int)$this->request->query->get('id');
+        //$post = $this->getPost($idPost);
+        
+            //if ($post === null) {
+            //throw new ResourceNotFoundException();
+        
 
         $response = new Response();
         $response->headers->set('Content-Type', 'text/html; charset=UTF-8');
@@ -60,41 +68,40 @@ class Post implements Common\Controller
             . \DIRECTORY_SEPARATOR
             . 'post.twig',
             [
-                'post' => $post
+                //'post' => $post
             ]
         ));
 
         return $response;
     }
     private function getPost($id): array
-   
-   
-   
-    { $posts=[
-            ["id" =>"1",
-            "title" => "Jak efektywnie uczyć się programowania?", 
-            "content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "url" => "",
-            "date" => "12-08-2020",
-            "author_forename" => "John",
-            "author_surname" => "Nowak"],
-            ["id"=>"2",
-            "title" => "Jak efektywnie uczyć się programowania2?", 
-            "content" => "blaablalblabllb.",
-            "url" => "",
-            "date" => "12-08-2020",
-            "author_forename" => "John",
-            "author_surname" => "Nowak"],
-            ["id"=>"3",
-            "title" => "Jak efektywnie uczyć się programowania3?", 
-            "content" => "trololololo.",
-            "url" => "",
-            "date" => "12-08-2020",
-            "author_forename" => "John",
-            "author_surname" => "Nowak"]
-        ];
+        { return $this->postRepository->getOne();
+            
+    //$posts=[
+           // ["id" =>"1",
+           // "title" => "Jak efektywnie uczyć się programowania?", 
+           // "content" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            //"url" => "",
+            //"date" => "12-08-2020",
+            //"author_forename" => "John",
+            //"author_surname" => "Nowak"],
+            //["id"=>"2",
+           // "title" => "Jak efektywnie uczyć się programowania2?", 
+            //"content" => "blaablalblabllb.",
+           // "url" => "",
+            //"date" => "12-08-2020",
+            //"author_forename" => "John",
+            //"author_surname" => "Nowak"],
+            //["id"=>"3",
+            //"title" => "Jak efektywnie uczyć się programowania3?", 
+            //"content" => "trololololo.",
+            //"url" => "",
+            //"date" => "12-08-2020",
+            //"author_forename" => "John",
+            //"author_surname" => "Nowak"]
+        //];
     
       
-         return $posts[$id-1];
-    }
+         //return $posts[$id-1];
+        }
 }

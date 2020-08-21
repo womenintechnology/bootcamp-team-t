@@ -33,7 +33,10 @@ class MySQL implements Posts
     }
 
     public function getOne(int $id): ?Model\PostView
-    {
+    {   $sql = "SELECT id, title,published, author_id";
+        $stmt = $this->pdo->query($sql);
+        $data = $stmt -> fetchOne();
+
         return empty($row) ? null : $this->createModel($row);
     }
 

@@ -1,5 +1,5 @@
 import Test from "./components/test";
-
+import Utils from "./base/utils.js";
 class App {
     constructor() {
         this.init();
@@ -7,6 +7,7 @@ class App {
 
     init() {
         new Test();
+        new Utils();
     }
 }
 
