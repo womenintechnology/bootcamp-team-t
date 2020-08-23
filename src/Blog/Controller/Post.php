@@ -74,7 +74,7 @@ class Post implements Common\Controller
 
         return $response;
     }
-    private function getPost($id): array
+    private function getPost('id'): array
         { return $this->postRepository->getOne();
             
     //$posts=[

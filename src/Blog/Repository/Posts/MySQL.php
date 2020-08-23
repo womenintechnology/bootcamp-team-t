@@ -33,9 +33,9 @@ class MySQL implements Posts
     }
 
     public function getOne(int $id): ?Model\PostView
-    {   $sql = "SELECT id, title,published, author_id";
+    {   $sql = "SELECT id, title,published, author_id from Posts where id = ".$id.";";
         $stmt = $this->pdo->query($sql);
-        $data = $stmt -> fetchOne();
+        $data = $stmt -> fetchAll();
 
         return empty($row) ? null : $this->createModel($row);
     }
