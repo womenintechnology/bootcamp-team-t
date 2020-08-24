@@ -8,6 +8,7 @@ use WIT\FullStackBootcamp\Common;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
+use WIT\FullStackBootcamp\Blog\Model;
 
 class Post implements Common\Controller
 {
@@ -67,7 +68,7 @@ class Post implements Common\Controller
         return $response;
     }
 
-    private function getPost(int $id): array
+    private function getPost(int $id): ?Model\PostView
     {
         return $this->postsRepository->getOne($id);
     }
