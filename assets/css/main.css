@@ -21,3 +21,4 @@
 @import "tasks/global";
 @import "tasks/contact-tasks";
 @import "tasks/blog-tasks";
+@import "tasks/_article-tasks";
