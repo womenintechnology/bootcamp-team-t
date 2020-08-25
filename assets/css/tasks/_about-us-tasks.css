@@ -1,27 +1,26 @@
 /* ABOUT PAGE */
 .person-box {
     float: left;
-    /* padding;  set the same space around the contents of the box */
-    /* border-radius; */
-    /* box-shadow; */
-    /* text-align; center the text */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    text-align: center;
 }
-
-.person-box:not(:last-child) { /* The :not() CSS pseudo-class represents elements that do not match a list of selectors */
-    /* margin-right ; */
+​
+.person-box:not(:last-child) {
+    margin-right: 5rem;
 }
-
+​
 .person-box__img {
-    /* Make a rectangle by setting values in hight and width properties */
-    /* height; */
-    /* width; */
+    height: 6rem;
+    width: 6rem;
     display: inline-block;
-    /* border-radius; make a circle shape */
+    border-radius: 100%;
     background-color: antiquewhite;
 }
-
+​
 .person-box__description {
-    /* text-align; center the text */
+    text-align: center;
 }
 
 .u-center-text {
