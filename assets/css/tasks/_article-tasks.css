@@ -1,73 +1,78 @@
-
+/* SINGLE POST PAGE */
 .post-page__img { 
-    /* width; the element should occupy the entire available width */
-    /* height; */
+    width: 100%;
+    height: 20rem;
     overflow: hidden;
     object-fit: fill;
 }
-
+​
 .post-page__header {
-    /* width; the element should occupy the entire available width */
+    width: 100%;
 }
-
-
+​
+​
 .post-page-end__button--previous,
 .post-page__author-info,
 .post-page-end__button--next {
-    /* float; set element on left */
-    /* width; all three elements at the end of the page should share the available width between them, so one element should take up 1/3 of the entire available width*/
+    float: left;
+    width: 30%;
 }
-
+​
+.post-page__author-info {
+    width: 40%;
+}
+​
 .post-page-end__button--next {
-    /* float; set element on right */
+    float: right;
 }
-
+​
 .post-page-end__button--previous { 
-    /* text-align; set text on the left */
+    text-align: left;
 }
-
+​
 .post-page-end__button--next {
-    /* text-align; set text on the right*/
+    text-align: right;
 }
-
+​
 .author-box__img {
-    /* text-align; center the text */
-    /* float; set element on left side */
-    /* Make a rectangle by setting values in hight and width properties */
-    /* height; */
-    /* width; */
-    /* border-radius; make a circle shape */
+    text-align: center;
+    float: left;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 100%;
     background-color: antiquewhite;
 }
-
-
+​
+​
 .author-box__description {
-    /* text-align; set text on the left side */
+    text-align: left;
 }
-
+​
 .author-description {
-    /* text-align; center the text */
+    text-align: center;   
 }
-
+​
 .author-title {
-    /* text-transform;
-    font-weight;
-    font-weight; */
+    text-transform: uppercase;
+    font-weight: normal;
+    font-weight: lighter;
 }
-
+​
 .author-title {
-    /* margin; reset the value for this margin */
+    margin: 0;
 }
-
+​
 .author-info--position {
-    /* margin; reset the value for this margin */
+    margin: 0;
 }
-
+​
 .author-info--name {
-    /* font-weight; */
+    font-weight: bold;
 }
-
+​
 .author-info--name {
-    /* margin; set margin at the top and bottom */
+    margin: .5rem 0;
 }
-
+​.container {
+    font-family: 'Lato', sans-serif;
+}
