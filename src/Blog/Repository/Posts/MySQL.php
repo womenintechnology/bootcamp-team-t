@@ -49,7 +49,7 @@ class MySQL implements Posts
             (int) $row['id'],
             $row['title'],
             substr($row['content'], 0 ,100),
-            'https://picsum.photos/id/237/200/300',
+            'https://picsum.photos/id',
             $row['content'],
             new \DateTime($row['published'], $this->timezone),
             new Model\AuthorView(
