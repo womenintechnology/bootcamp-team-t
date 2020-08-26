@@ -36,8 +36,9 @@ class MySQL implements Posts
     {   
         $sql = "SELECT Authors.forename as author_forename, Authors.surname as author_surname, Authors.email as author_email,
         Posts.id, Posts.title, Posts.content, Posts.published, Posts.author_id 
-        from Posts left join Authors on Posts.author_id=Authors.id where Posts.id = ".$id.";";
-        $stmt = $this->pdo->query($sql);
+        from Posts left join Authors on Posts.author_id=Authors.id where Posts.id = :id;";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute([':id'=>$id]);
         $data = $stmt->fetch();
         return empty($data) ? null : $this->createModel($data);
     }
