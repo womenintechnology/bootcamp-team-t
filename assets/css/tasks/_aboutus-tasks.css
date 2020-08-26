@@ -6,23 +6,20 @@
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     text-align: center;
 }
-​
 .person-box:not(:last-child) {
     margin-right: 5rem;
 }
-​
 .person-box__img {
     height: 6rem;
-    width: 6rem;
+    width: 6rem; 
     display: inline-block;
     border-radius: 100%;
     background-color: antiquewhite;
+    object-fit: cover;
 }
-​
 .person-box__description {
     text-align: center;
 }
-
 .u-center-text {
     text-align: center;
 }
