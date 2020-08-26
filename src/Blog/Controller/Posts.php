@@ -86,8 +86,7 @@ class Posts implements Common\Controller
             $posts[$i]["url"] = $this->random_url();
         }
     
-        //die($posts);
-        die(var_dump($posts));
+        
         return $posts;
     }
     
