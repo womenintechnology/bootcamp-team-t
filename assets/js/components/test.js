@@ -4,10 +4,11 @@ export default class Test {
     }
 
     init() {
-        this.greetings("Hello form js");
+        this.greetings("7999");
     }
 
     greetings(text) {
         console.log(text);
     }
+    
 }

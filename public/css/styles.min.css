@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap);
+@charset "UTF-8";
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -948,4 +949,107 @@ li:last-child {
 
 .post-description__preamble {
   width: 100%; }
+
+/* ABOUT PAGE */
+.person-box {
+  float: left;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  text-align: center; }
+
+.person-box:not(:last-child) {
+  margin-right: 5rem; }
+
+.person-box__img {
+  height: 6rem;
+  width: 6rem;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: antiquewhite;
+  object-fit: cover; }
+
+.person-box__description {
+  text-align: center; }
+
+.u-center-text {
+  text-align: center; }
+
+/* SINGLE POST PAGE */
+.post-page__img {
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+  object-fit: fill; }
+
+​
+.post-page__header {
+  width: 100%; }
+
+​
+​
+.post-page-end__button--previous,
+.post-page__author-info,
+.post-page-end__button--next {
+  float: left;
+  width: 30%; }
+
+​
+.post-page__author-info {
+  width: 40%; }
+
+​
+.post-page-end__button--next {
+  float: right; }
+
+​
+.post-page-end__button--previous {
+  text-align: left; }
+
+​
+.post-page-end__button--next {
+  text-align: right; }
+
+​
+.author-box__img {
+  text-align: center;
+  float: left;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 100%;
+  background-color: antiquewhite; }
+
+​
+​
+.author-box__description {
+  text-align: left; }
+
+​
+.author-description {
+  text-align: center; }
+
+​
+.author-title {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-weight: lighter; }
+
+​
+.author-title {
+  margin: 0; }
+
+​
+.author-info--position {
+  margin: 0; }
+
+​
+.author-info--name {
+  font-weight: bold; }
+
+​
+.author-info--name {
+  margin: .5rem 0; }
+
+​.container {
+  font-family: 'Lato', sans-serif; }
 
