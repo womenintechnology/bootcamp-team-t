@@ -5,11 +5,12 @@ import Utils from "./base/utils";
 class App {
     constructor() {
         this.init();
+        
     }
 
     init() {
         new Test();
-        new Utils ();
+        new Utils();
     }
 }
 

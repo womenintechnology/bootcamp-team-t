@@ -3,19 +3,21 @@ import 'owl.carousel';
 export default class Utils {
     contructor() {
         this.init();
+        console.log(890)
     }
 
     init() {
         this.mainSlider();
     }
-    mainSlider() {
 
-        $(document).ready(functionr())
+    mainSlider() {
+        console.log(123)
+        $(document).ready(function()
         {
         
-            $('.owl-carousel').owlCarousel();
+            $('owl.carousel').owlCarousel();
 
-        };
+        });
         var links = document.querySelectorAll('.slider a');
         var slides = document.querySelectorAll('section');
 
